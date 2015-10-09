@@ -12,9 +12,14 @@
 		613C3C2C1BC6FFE700C0F4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613C3C2A1BC6FFE700C0F4EA /* Main.storyboard */; };
 		613C3C2E1BC6FFE700C0F4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613C3C2D1BC6FFE700C0F4EA /* Assets.xcassets */; };
 		613C3C311BC6FFE700C0F4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613C3C2F1BC6FFE700C0F4EA /* LaunchScreen.storyboard */; };
+		61F3B1721BC756BE009CA590 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3B1711BC756BE009CA590 /* APIClient.swift */; settings = {ASSET_TAGS = (); }; };
+		61F3B1741BC76007009CA590 /* RACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3B1731BC76007009CA590 /* RACViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		61F3B1761BC791D4009CA590 /* UIKit+ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3B1751BC791D4009CA590 /* UIKit+ReactiveExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		F5F944037BD56DA695A01A97 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD1586E55A2BBFA93B2FCB3 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB7F41E7ABD32DEBD915D21 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		613C3C231BC6FFE700C0F4EA /* RACSignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACSignUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		613C3C261BC6FFE700C0F4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		613C3C281BC6FFE700C0F4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		613C3C2D1BC6FFE700C0F4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		613C3C301BC6FFE700C0F4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		613C3C321BC6FFE700C0F4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F3B1711BC756BE009CA590 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		61F3B1731BC76007009CA590 /* RACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACViewController.swift; sourceTree = "<group>"; };
+		61F3B1751BC791D4009CA590 /* UIKit+ReactiveExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+ReactiveExtensions.swift"; sourceTree = "<group>"; };
+		BBB40231D7CF3C14527B3465 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD1586E55A2BBFA93B2FCB3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F944037BD56DA695A01A97 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				613C3C251BC6FFE700C0F4EA /* RACSignUp */,
 				613C3C241BC6FFE700C0F4EA /* Products */,
+				EDB965A063F6B8F8F45179B4 /* Pods */,
+				94839F613C5ACD8D29857576 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +73,28 @@
 				613C3C2D1BC6FFE700C0F4EA /* Assets.xcassets */,
 				613C3C2F1BC6FFE700C0F4EA /* LaunchScreen.storyboard */,
 				613C3C321BC6FFE700C0F4EA /* Info.plist */,
+				61F3B1711BC756BE009CA590 /* APIClient.swift */,
+				61F3B1731BC76007009CA590 /* RACViewController.swift */,
+				61F3B1751BC791D4009CA590 /* UIKit+ReactiveExtensions.swift */,
 			);
 			path = RACSignUp;
+			sourceTree = "<group>";
+		};
+		94839F613C5ACD8D29857576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1586E55A2BBFA93B2FCB3 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDB965A063F6B8F8F45179B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB40231D7CF3C14527B3465 /* Pods.debug.xcconfig */,
+				0EB7F41E7ABD32DEBD915D21 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 613C3C351BC6FFE700C0F4EA /* Build configuration list for PBXNativeTarget "RACSignUp" */;
 			buildPhases = (
+				98672905954E15F63B2E66FA /* Check Pods Manifest.lock */,
 				613C3C1F1BC6FFE700C0F4EA /* Sources */,
 				613C3C201BC6FFE700C0F4EA /* Frameworks */,
 				613C3C211BC6FFE700C0F4EA /* Resources */,
+				0BB7995A696D5596685CF6DF /* Embed Pods Frameworks */,
+				1E648E7FA4C4E8A316D901AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,13 +165,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BB7995A696D5596685CF6DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E648E7FA4C4E8A316D901AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98672905954E15F63B2E66FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		613C3C1F1BC6FFE700C0F4EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				613C3C291BC6FFE700C0F4EA /* ViewController.swift in Sources */,
+				61F3B1761BC791D4009CA590 /* UIKit+ReactiveExtensions.swift in Sources */,
 				613C3C271BC6FFE700C0F4EA /* AppDelegate.swift in Sources */,
+				61F3B1721BC756BE009CA590 /* APIClient.swift in Sources */,
+				61F3B1741BC76007009CA590 /* RACViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +331,7 @@
 		};
 		613C3C361BC6FFE700C0F4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB40231D7CF3C14527B3465 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACSignUp/Info.plist;
@@ -255,6 +343,7 @@
 		};
 		613C3C371BC6FFE700C0F4EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB7F41E7ABD32DEBD915D21 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACSignUp/Info.plist;
@@ -283,6 +372,7 @@
 				613C3C371BC6FFE700C0F4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
